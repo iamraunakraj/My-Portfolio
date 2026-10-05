@@ -57,7 +57,7 @@ export default function Hero() {
               </button>
 
               <a
-                href="/resume.pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
                 download="Raunak_FullStack_Developer_Resume.pdf"
                 className="px-6 py-3 rounded-xl bg-white dark:bg-slate-900/80 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-300 dark:border-slate-700/80 hover:border-slate-400 dark:hover:border-slate-500 text-slate-800 dark:text-slate-200 font-medium text-sm transition-all duration-200 flex items-center gap-2 cursor-pointer shadow-xs"
               >
