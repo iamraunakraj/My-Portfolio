@@ -7,38 +7,6 @@ export default function Hero() {
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleDownloadResume = () => {
-    const resumeText = `RAUNAK RAJ - FULL STACK DEVELOPER
-Email: rajraunak720@gmail.com
-Education: B.Tech Computer Science & Engineering, Roorkee Institute of Technology (2023 - 2027)
-
-TECHNICAL SKILLS:
-- Languages: Java, JavaScript (ES6+), HTML5, CSS3, SQL
-- Frontend: React.js, Tailwind CSS, Bootstrap, Responsive Design
-- Backend: Node.js, Express.js, REST APIs, JWT Authentication
-- Database: MongoDB, Mongoose, SQL
-- Tools: Git, GitHub, Postman, Vite, VS Code
-
-FEATURED PROJECTS:
-1. JeevanCare — Doctor Appointment & Token Booking Platform
-   Tech: React, Node.js, Express, MongoDB, Socket.io, Razorpay, Tailwind CSS
-   - Real-time digital token tracking and appointment management system.
-   - Doctor dashboard, patient portal, live queue status updates.
-
-2. Tic-Tac-Toe Full Stack — Multiplayer Game with Leaderboards
-   Tech: React, Node.js, Express, MongoDB, JWT
-   - Player authentication, persistent match histories, dynamic win-rate ranking.
-
-`;
-    const blob = new Blob([resumeText], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Raunak_FullStack_Developer_Resume.txt';
-    link.click();
-    URL.revokeObjectURL(url);
-  };
-
   return (
     <section
       id="home"
@@ -88,13 +56,14 @@ FEATURED PROJECTS:
                 <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
               </button>
 
-              <button
-                onClick={handleDownloadResume}
+              <a
+                href="/resume.pdf"
+                download="Raunak_FullStack_Developer_Resume.pdf"
                 className="px-6 py-3 rounded-xl bg-white dark:bg-slate-900/80 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-300 dark:border-slate-700/80 hover:border-slate-400 dark:hover:border-slate-500 text-slate-800 dark:text-slate-200 font-medium text-sm transition-all duration-200 flex items-center gap-2 cursor-pointer shadow-xs"
               >
                 <FileText className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
                 <span>Download Resume</span>
-              </button>
+              </a>
             </div>
 
             {/* Social Icons & Status */}
