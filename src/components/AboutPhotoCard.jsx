@@ -192,7 +192,7 @@ export default function AboutPhotoCard() {
               <Github className="w-3.5 h-3.5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/raunak-raj-aab2072a0/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-cyan-500 transition-colors"
