@@ -1,0 +1,115 @@
+<svg viewBox="0 0 400 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <radialGradient id="haloLight" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0a97d" />
+      <stop offset="100%" stop-color="#c68642" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242833" />
+      <stop offset="100%" stop-color="#11141c" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="400" height="440" fill="url(#bgGrad)" />
+  <circle cx="200" cy="180" r="180" fill="url(#haloLight)" />
+
+  <!-- Body / White Collared Shirt -->
+  <g id="shirt" filter="url(#softShadow)">
+    <!-- Shoulders & Torso -->
+    <path d="M60 440C60 350 100 290 160 270L200 300L240 270C300 290 340 350 340 440H60Z" fill="url(#shirtGrad)" />
+    
+    <!-- Shirt Seam Lines & Folds -->
+    <path d="M120 340C140 380 150 410 155 440" stroke="#cbd5e1" stroke-width="2" opacity="0.6" />
+    <path d="M280 340C260 380 250 410 245 440" stroke="#cbd5e1" stroke-width="2" opacity="0.6" />
+
+    <!-- Button Placket -->
+    <line x1="200" y1="300" x2="200" y2="440" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+    <circle cx="200" cy="330" r="4.5" fill="#94a3b8" />
+    <circle cx="200" cy="370" r="4.5" fill="#94a3b8" />
+    <circle cx="200" cy="410" r="4.5" fill="#94a3b8" />
+
+    <!-- Crisp White Collar -->
+    <path d="M150 272L190 310L200 272" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+    <path d="M250 272L210 310L200 272" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+    <polygon points="152,272 192,308 175,314 140,285" fill="#f1f5f9" />
+    <polygon points="248,272 208,308 225,314 260,285" fill="#f1f5f9" />
+  </g>
+
+  <!-- Neck -->
+  <rect x="175" y="230" width="50" height="50" rx="8" fill="#c68642" />
+  <!-- Shadow under chin -->
+  <ellipse cx="200" cy="245" rx="28" ry="10" fill="#a16207" opacity="0.4" />
+
+  <!-- Head Base -->
+  <g id="head" filter="url(#softShadow)">
+    <ellipse cx="200" cy="180" rx="66" ry="74" fill="url(#skinGrad)" />
+    <!-- Cheeks & Jaw Definition -->
+    <path d="M148 185C148 230 170 248 200 248C230 248 252 230 252 185C252 150 248 135 200 135C152 135 148 150 148 185Z" fill="url(#skinGrad)" />
+  </g>
+
+  <!-- Natural Wavy Hair (Structured to match Raunak's real photo) -->
+  <g id="hair" filter="url(#softShadow)">
+    <!-- Base Hair Dome -->
+    <path d="M130 170C125 105 150 78 200 78C250 78 275 105 270 170C255 145 235 140 205 142C175 144 155 130 130 170Z" fill="url(#hairGrad)" />
+    
+    <!-- Top Hair Volume & Waves -->
+    <path d="M142 110C165 85 240 85 260 115C240 98 215 95 195 102C170 106 155 98 142 110Z" fill="#2d3342" />
+    <!-- Front Hair Fringe Waves -->
+    <path d="M135 155C145 132 175 130 190 140C170 136 150 142 135 155Z" fill="#1b1e26" />
+    <path d="M265 155C255 132 225 130 210 140C230 136 250 142 265 155Z" fill="#1b1e26" />
+  </g>
+
+  <!-- Clean Groomed Beard & Mustache (Matching Raunak's real photo) -->
+  <g id="beard">
+    <!-- Mustache -->
+    <path d="M172 208C185 204 215 204 228 208C220 215 210 217 200 217C190 217 180 215 172 208Z" fill="#1e222b" />
+    
+    <!-- Chin Beard & Goatee -->
+    <path d="M165 200C165 236 182 250 200 250C218 250 235 236 235 200C231 228 218 242 200 242C182 242 169 228 165 200Z" fill="#1e222b" />
+    <!-- Center soul patch -->
+    <ellipse cx="200" cy="223" rx="5" ry="3.5" fill="#171920" />
+  </g>
+
+  <!-- Facial Features -->
+  <g id="features">
+    <!-- Eyebrows -->
+    <path d="M155 155C166 150 178 152 184 156" stroke="#161922" stroke-width="4.5" stroke-linecap="round" />
+    <path d="M216 156C222 152 234 150 245 155" stroke="#161922" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Eyes -->
+    <ellipse cx="170" cy="168" rx="7" ry="7.5" fill="#0f172a" />
+    <ellipse cx="230" cy="168" rx="7" ry="7.5" fill="#0f172a" />
+    <!-- White Eye Specular Highlights -->
+    <circle cx="172" cy="165" r="2.5" fill="#ffffff" />
+    <circle cx="232" cy="165" r="2.5" fill="#ffffff" />
+
+    <!-- Nose -->
+    <path d="M200 162V188L207 190" stroke="#b45309" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Friendly Smile -->
+    <path d="M182 214C188 220 212 220 218 214" stroke="#9a3412" stroke-width="2.5" stroke-linecap="round" />
+    <!-- Smile teeth highlight -->
+    <path d="M186 214C192 217 208 217 214 214" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Modern Ambient Lighting Accents -->
+  <circle cx="200" cy="180" r="180" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 12" opacity="0.3" />
+</svg>
